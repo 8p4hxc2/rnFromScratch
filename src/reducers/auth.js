@@ -12,7 +12,7 @@ export const actions = {
 
 // initial state
 const initialState = {
-
+    user: 'change me'
 };
 
 // reducers
