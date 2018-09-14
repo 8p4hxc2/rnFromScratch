@@ -1,7 +1,14 @@
-import { createBottomTabNavigator } from 'react-navigation';
-import { home, login } from './screens';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { Root } from './configs/routes';
+import store from './configs/store';
 
-export default createBottomTabNavigator({
-  Home: home,
-  Login: login,
-});
+class App extends Component {
+  render() {
+    return <Provider store={store}>
+      <Root />
+    </Provider>;
+  }
+}
+
+export default App;
